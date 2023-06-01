@@ -76,14 +76,6 @@
 
 typedef struct ngx_ssl_ocsp_s ngx_ssl_ocsp_t;
 
-struct ngx_ssl_s
-{
-    SSL_CTX *ctx;
-    ngx_log_t *log;
-    size_t buffer_size;
-    ngx_ssl_dyn_rec_t dyn_rec;
-};
-
 typedef struct
 {
     ngx_msec_t timeout;
@@ -91,6 +83,13 @@ typedef struct
     size_t size_lo;
     size_t size_hi;
 } ngx_ssl_dyn_rec_t;
+struct ngx_ssl_s
+{
+    SSL_CTX *ctx;
+    ngx_log_t *log;
+    size_t buffer_size;
+    ngx_ssl_dyn_rec_t dyn_rec;
+};
 
 typedef struct
 {

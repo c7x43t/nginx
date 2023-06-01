@@ -91,13 +91,13 @@ struct ngx_ssl_s
     ngx_ssl_dyn_rec_t dyn_rec;
 };
 
-typedef struct
-{
-    SSL_CTX *ctx;
-    ngx_log_t *log;
-    size_t buffer_size;
-    ngx_ssl_dyn_rec_t dyn_rec;
-} ngx_ssl_t;
+// typedef struct
+// {
+//     SSL_CTX *ctx;
+//     ngx_log_t *log;
+//     size_t buffer_size;
+//     ngx_ssl_dyn_rec_t dyn_rec;
+// } ngx_ssl_t;
 
 struct ngx_ssl_connection_s
 {
